@@ -160,10 +160,15 @@ class AboutRegularExpressions < Neo::Koan
 
   def test_a_vertical_pipe_means_or
     grays = /(James|Dana|Summer) Gray/
-    assert_equal "James Gray", "James Gray"[grays] # match James or Dana or Summer following Gray
-    assert_equal "Summer", "Summer Gray"[grays, 1] # need explanation
+    assert_equal "James Gray", "James Gray"[grays] # match James or Dana or Summer following Gray, if no number, 0 is default
+    assert_equal "Summer", "Summer Gray"[grays, 1] # the number is the order of the group, if 0 return whole match
     assert_equal nil, "Jim Gray"[grays, 1] 
   end
+
+  #note
+  #  /(?<first>\w+) (?<last>\w+)/.match("Trung Huynh") => "Trung Huynh"
+  #  /(?<first>\w+) (?<last>\w+)/.match("Trung Huynh")["first"] => "Trung"
+  #  /(?<first>\w+) (?<last>\w+)/.match("Trung Huynh")["last"] => "Huynh"
 
   # THINK ABOUT IT:
   #
