@@ -69,11 +69,11 @@ Reference <a href="http://ploos.io/ruby-koans-companion-part-10-about_methods-rb
 
 `cd` into your new `koans` directory and run through the following exercises using `ruby <file_name.rb>`.
 
-- About Asserts - `about_asserts.rb`
-- About Arrays - `about_arrays.rb`
-- About Nil - `about_nil.rb`
-- About True and False - `about_true_and_false.rb`
-- About Strings - `about_strings.rb`
+- About Asserts - `about_asserts.rb`-done
+- About Arrays - `about_arrays.rb`-done
+- About Nil - `about_nil.rb` --done
+- About True and False - `about_true_and_false.rb`  --done
+- About Strings - `about_strings.rb` 
 - About Methods - `about_methods.rb` (through `method_without_explicit_return`)
 
 ##### Stretch Exercises:
